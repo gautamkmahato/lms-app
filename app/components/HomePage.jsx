@@ -6,6 +6,7 @@ import Link from 'next/link';
 import reactImage from '../../public/react.jpg';
 import english from '../../public/english3.jpg';
 import science from '../../public/science.jpg';
+import ProductShowcase from './ProductShowcase';
 
 export default function HomePage() {
   return (
@@ -80,71 +81,7 @@ export default function HomePage() {
 
       </section>
 
-      {/* Cards Section */}
-<section className="mt-16 px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-  {/* Card 1 */}
-  <div className="bg-gray-800 rounded-2xl overflow-hidden hover:bg-gray-700 transition flex flex-col">
-    <Image
-      src={reactImage}
-      alt="React Course"
-      width={500}
-      height={300}
-      className="w-full h-48 object-cover"
-    />
-    <div className="p-6 flex flex-col items-center text-center">
-      <h3 className="text-xl font-semibold mb-2">React</h3>
-      <p className="text-gray-400 text-sm mb-4">
-        React Js dolor sit, amet consectetur.
-      </p>
-      <a href="#" className="flex items-center gap-2 text-purple-400 font-medium hover:underline">
-        Learn More
-        <ArrowRight className="w-4 h-4" />
-      </a>
-    </div>
-  </div>
-
-  {/* Card 2 */}
-  <div className="bg-gray-800 rounded-2xl overflow-hidden hover:bg-gray-700 transition flex flex-col">
-    <Image
-      src={english}
-      alt="English Course"
-      width={500}
-      height={300}
-      className="w-full h-48 object-cover"
-    />
-    <div className="p-6 flex flex-col items-center text-center">
-      <h3 className="text-xl font-semibold mb-2">English</h3>
-      <p className="text-gray-400 text-sm mb-4">
-        Spken english dolor sit, amet consectetur.
-      </p>
-      <a href="#" className="flex items-center gap-2 text-purple-400 font-medium hover:underline">
-        Learn More
-        <ArrowRight className="w-4 h-4" />
-      </a>
-    </div>
-  </div>
-
-  {/* Card 3 */}
-  <div className="bg-gray-800 rounded-2xl overflow-hidden hover:bg-gray-700 transition flex flex-col">
-    <Image
-      src={science}
-      alt="Education Course"
-      width={500}
-      height={300}
-      className="w-full h-48 object-cover"
-    />
-    <div className="p-6 flex flex-col items-center text-center">
-      <h3 className="text-xl font-semibold mb-2">Education</h3>
-      <p className="text-gray-400 text-sm mb-4">
-        Eearning edu dolor sit, amet consectetur.
-      </p>
-      <a href="#" className="flex items-center gap-2 text-purple-400 font-medium hover:underline">
-        Learn More
-        <ArrowRight className="w-4 h-4" />
-      </a>
-    </div>
-  </div>
-</section>
+        <ProductShowcase />
 
     </div>
   );
